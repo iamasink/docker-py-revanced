@@ -86,6 +86,9 @@ on:
         description: "Apps to be patched. Overrides any env set"
         required: false
         type: string
+  push:
+    branches:
+      - main
 
 concurrency:
   group: ${{ github.head_ref || github.run_id }}
